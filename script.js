@@ -9,6 +9,7 @@ function colocarNatela(dados) {
     document.querySelector(".descricao").innerHTML = dados.weather[0].description
     document.querySelector(".umidade").innerHTML = "Umindade:  " + dados.main.humidity + "%"
     document.querySelector(".icone").src = "https://openweathermap.org/img/wn/" + dados.weather[0].icon + ".png"
+    
 }
 
 async function buscarCidade(cidade) {
